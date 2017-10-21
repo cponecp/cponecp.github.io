@@ -25,21 +25,21 @@
         _initRoles: function() {
 
             // 背景2个
-            this.roles.push( getSky( this.ctx, this.imgObj.sky, 3 ) );
-            this.roles.push( getSky( this.ctx, this.imgObj.sky, 3 ) );
+            this.roles.push( getSky( this.ctx, this.imgObj.sky, 2 ) );
+            this.roles.push( getSky( this.ctx, this.imgObj.sky, 2 ) );
 
             // 管道6个
             for ( var i = 0; i < 6; i++ ) {
-                this.roles.push( getPipe( this.ctx, this.imgObj.pipeDown, this.imgObj.pipeUp, 150, this.imgObj.land.height, 3 ) );
+                this.roles.push( getPipe( this.ctx, this.imgObj.pipeDown, this.imgObj.pipeUp, 150, this.imgObj.land.height, 2 ) );
             }
 
             // 大地4个
             for ( var i = 0; i < 4; i++ ) {
-                this.roles.push( getLand( this.ctx, this.imgObj.land, 3 ) );
+                this.roles.push( getLand( this.ctx, this.imgObj.land, 2 ) );
             }
 
             // 创建鸟
-            this.roles.push( getBird( this.ctx, this.imgObj.bird, 3, 1, 10, 10 ) );
+            this.roles.push( getBird( this.ctx, this.imgObj.bird, 3, 1, 50, 30 ) );
         },
 
         // 添加听众
